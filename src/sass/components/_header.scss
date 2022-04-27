@@ -1,0 +1,71 @@
+@use '../utils/_utils.scss' as sow;
+
+.header {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid sow.$grey;
+	background-color: sow.$white;
+	justify-content: center;
+
+	.header-logo {
+
+		img {
+			width: 152px;
+		}
+	}
+}
+
+.navigation {
+	width: 100%;
+	border-bottom: 1px solid sow.$grey;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: sow.$white;
+}
+
+.separator {
+	height: 100%;
+	width: 1px;
+	background-color: sow.$grey;
+}
+
+@media only screen and (min-width: 768px) {
+	.header {
+		width: 100%;
+		height: 80px;
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid sow.$grey;
+		background-color: sow.$white;
+
+		.header-logo {
+			position: absolute;
+			left: 150px;
+
+			img {
+				width: 152px;
+			}
+		}
+	}
+
+	.navigation {
+		width: 100%;
+		height: 56px;
+		border-bottom: 1px solid sow.$grey;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		background-color: sow.$white;
+	}
+
+	.separator {
+		height: 100%;
+		width: 1px;
+		background-color: sow.$grey;
+	}
+}

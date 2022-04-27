@@ -1,0 +1,45 @@
+@use '../utils/_utils.scss' as sow;
+
+.search-bar {
+
+	display: flex;
+	justify-content: center;
+	background-color: sow.$white;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid sow.$grey;
+
+	img {
+		padding-right: 8px;
+
+	}
+
+	.search-input input {
+		width: 90vw;
+		border: none;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.search-bar {
+
+		display: flex;
+		padding-right: sow.$headerpadding;
+		padding-left: sow.$headerpadding;
+		background-color: sow.$white;
+		width: unset;
+		padding-bottom: 0;
+		padding-top: 0;
+		border-bottom: none;
+
+		img {
+			padding-right: 8px;
+
+		}
+
+		.search-input input {
+			width: 797px;
+			border: none;
+		}
+	}
+}

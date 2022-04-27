@@ -1,0 +1,44 @@
+@use '../utils/_utils.scss' as sow;
+
+.products-container {
+
+	padding-top: 20px;
+	position: relative;
+
+	p {
+		font-family: 'Roboto';
+		font-weight: 700;
+		font-size: 24px;
+		color: sow.$darkgrey;
+		text-align: center;
+		position: relative;
+		margin: 0;
+		padding-bottom: 15px;
+	}
+
+	.products {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.products-container {
+
+		padding-top: 50px;
+		padding-left: 150px;
+		padding-right: 150px;
+		height: 100%;
+
+		p {
+			padding-bottom: 30px;
+			text-align: left;
+		}
+
+		.products {
+			justify-content: flex-start;
+		}
+	}
+}
